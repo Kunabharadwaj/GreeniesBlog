@@ -68,11 +68,16 @@ const PostDetail = ({ post }) => {
             </div>
           </div>
           <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
-          {post.content.raw.children.map((typeObj, index) => {
-            const children = typeObj.children.map((item, itemindex) => getContentFragment(itemindex, item.text, item));
-
-            return getContentFragment(index, children, typeObj, typeObj.type);
-          })}
+          <div class="postDetails">
+            <p>Get ready, team! This Friday, we're swapping our keyboards and code for some real-life adventure!</p>
+            <p>Who said programmers don't know how to have fun? This Friday, we're proving them wrong!.</p>
+            <p>Who said programmers don't know how to have fun? This Friday, we're proving them wrong!.</p>
+            <p>This Friday, we're stepping out of our comfort zones and into the great outdoors for a team outing that promises fun, laughter, and some unforgettable memories.</p>
+            <p>We're trading in our office chairs for some good food and elixir this Friday, and we couldn't be more excited!</p>
+            <p>Our team is like a family, and this Friday, we're having a family outing! Get ready for a day of fun, games, and team bonding.</p>
+            <p>We believe that all work and no play makes for a dull team. So, this Friday, we're shaking things up with a team outing that's sure to be anything but dull!</p>
+            <p>Who's ready for some fun? This Friday, we're leaving the office behind for a day of adventure, laughter, and team bonding. We can't wait to see you there!", Leave a comment down below on what you think about this Friday.</p>
+          </div>
         </div>
       </div>
 
